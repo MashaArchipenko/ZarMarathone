@@ -8,9 +8,9 @@ function Layout(props) {
         className={s.root}
         style={
           (urlBg)
-            ? { bacground: "url(" + urlBg + ")" }
+            ? { background: "url(" + urlBg + ")" }
             : (colorBg)
-            ? { bacground: colorBg }
+            ? { background: colorBg }
             : ""
         }
       >

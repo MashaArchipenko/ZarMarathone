@@ -10,8 +10,8 @@ function App() {
     <>
       <Header title="title of header" descr="description" />
       <Layout title="title of layout" descr = "descr layout" urlBg = {bacgroundImg} />
-      <Layout  colorBg = {redColor}/>
-      <Layout  urlBg = {bacgroundImg}/>
+      <Layout title="title of layout" descr = "descr layout" colorBg = {redColor}/>
+      <Layout title="title of layout" descr = "descr layout" urlBg = {bacgroundImg}/>
       <Footer />
     </>
   );
