@@ -1,7 +1,7 @@
 import s from "./layoutStyle.module.css";
 
 function Layout(props) {
-  const { title, descr, urlBg, colorBg } = props;
+  const { title, descr, urlBg, colorBg,children } = props;
   return (
     <>
       <section
@@ -20,9 +20,10 @@ function Layout(props) {
               <h3>{title}</h3>
               <span className={s.separator}></span>
             </div>
-            <div className={(s.desc, s.full)}>
-              <p>{descr}</p>
+            <div className={`${s.desc} ${s.full}`}>
+              <p>{descr}</p>{children}
             </div>
+            
           </article>
         </div>
       </section>
