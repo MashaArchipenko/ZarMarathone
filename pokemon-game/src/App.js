@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Layout from './components/Layout'
+import bacgroundImg from './img/bg1.jpg'
 
 function App() {
+  const redColor='red'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header title="title of header" descr="description" />
+      <Layout title="title of layout" descr = "descr layout" urlBg = {bacgroundImg} />
+      <Layout title="title of layout" descr = "descr layout" colorBg = {redColor}/>
+      <Layout title="title of layout" descr = "descr layout" urlBg = {bacgroundImg}/>
+      <Footer />
+    </>
   );
 }
 
