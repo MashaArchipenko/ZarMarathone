@@ -1,13 +1,13 @@
-import '../headerStyle.css'
+import s from './style.module.css'
 
-const Header = () =>
+const Header = ({title},{dscr}) =>
 {
     return(
-    <header class="root">
-    <div class="forest"></div>
-    <div class="container">
-        <h1>This is title</h1>
-        <p>This is Description!</p>
+    <header className={s.root}>
+    <div className= {s.forest}></div>
+    <div className={s.container}>
+        <h1>{title}</h1>
+        <p>{dscr}</p>
     </div>
 </header>)
 } 

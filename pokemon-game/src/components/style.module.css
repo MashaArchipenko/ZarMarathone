@@ -1,4 +1,3 @@
-
 .root {
     background: #202736;
     background-attachment: fixed;
@@ -12,7 +11,7 @@
 .root::before {
     content: '';
     position: fixed;
-    background: url(https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a83c9ee4-6981-4ba7-8955-4ceac8f9778f/Stars.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210311%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210311T180626Z&X-Amz-Expires=86400&X-Amz-Signature=82013edee2b626faebaad04492fd5aed6ffe4fc6b52c950c9ddaa62aeacdff2e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Stars.svg%22);
+    background: url(../img/Stars.svg);
     background-attachment: fixed;
     width: 100%;
     min-height: 100vh;
@@ -35,7 +34,7 @@
     position: absolute;
     bottom: -300px;
     left: 0;
-    background: url(https://s3.us-west-2.amazonaws.com/secure.notion-static.com/25bb5944-e49b-4e34-b4fd-374d5a7598ea/Trees.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210311%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210311T180704Z&X-Amz-Expires=86400&X-Amz-Signature=490646ed7b1e2468bb6f11d8294a869b87f7d569790d430d2f2e2c802d902d25&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Trees.svg%22) bottom left repeat-x;
+    background: url(../img/Trees.svg) bottom left repeat-x;
     background-size: cover;
     width: 100%;
     height: 80%;
@@ -88,4 +87,36 @@
     font-weight: normal;
     color: #fafafa;
     line-height: 32px;
+}
+
+footer {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #fafafa;
+    z-index: 0;
+}
+
+footer .wrapper {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    max-width: 1400px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 649px) {
+    footer .wrapper {
+        flex-direction: column;
+    }
+
+    footer .wrapper h3 {
+        padding-bottom: .8rem;
+    }
 }
